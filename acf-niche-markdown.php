@@ -3,8 +3,10 @@
 Plugin Name: Advanced Custom Fields: Markdown
 Description: A markdown-enhanced textarea field.
 Version: 1.0.1
+Requires PHP: 5.4
 Author: Niche Studio
 Author URI: https://nichestud.io
+GitHub Plugin URI: https://github.com/nichestudio/ACF-Markdown
 */
 
 namespace Niche\ACF;
