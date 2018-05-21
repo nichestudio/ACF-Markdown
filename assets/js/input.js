@@ -29,7 +29,7 @@
 				insertTexts: {
 					image: [ '![](#url#', ')' ],
 				},
-				spellChecker: true,
+				spellChecker: this.o.spellcheck === 1,
 				toolbar: [
 					'bold',
 					'italic',
@@ -61,10 +61,6 @@
 
 			if ( this.o.toolbar === 0 ) {
 				args.toolbar = false;
-			}
-
-			if ( this.o.spellcheck === 0 ) {
-				args.spellChecker = false;
 			}
 
 
