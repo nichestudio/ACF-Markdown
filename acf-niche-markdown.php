@@ -2,7 +2,7 @@
 /*
 Plugin Name: Advanced Custom Fields: Markdown
 Description: A markdown-enhanced textarea field.
-Version: 1.0.1
+Version: 1.1.0
 Requires PHP: 5.4
 Author: Niche Studio
 Author URI: https://nichestud.io
@@ -20,7 +20,7 @@ class Markdown_Plugin {
 	function __construct() {
 
 		$this->settings = [
-			'version' => '1.0.1',
+			'version' => '1.1.0',
 			'url'     => plugin_dir_url( __FILE__ ),
 			'path'    => plugin_dir_path( __FILE__ ),
 		];
