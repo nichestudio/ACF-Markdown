@@ -75,15 +75,11 @@ class Markdown_Field extends \acf_field {
 		$url     = $this->plugin_settings['url'];
 		$version = $this->plugin_settings['version'];
 
-		wp_register_script( 'acf-niche-markdown-inscrybmde', "{$url}assets/js/inscrybmde-1.11.3.min.js", null, $version );
-		wp_register_script( 'acf-niche-markdown', "{$url}assets/js/input.js", [ 'acf-input' ], $version );
-		wp_enqueue_script( 'acf-niche-markdown-inscrybmde' );
-		wp_enqueue_script( 'acf-niche-markdown' );
+		wp_enqueue_script( 'acf-niche-markdown-inscrybmde', "{$url}assets/js/inscrybmde-1.11.3.min.js", null, $version );
+		wp_enqueue_script( 'acf-niche-markdown', "{$url}assets/js/input.js", [ 'acf-input' ], $version );
 
-		wp_register_style( 'acf-niche-markdown-inscrybmde', "{$url}assets/css/inscrybmde-1.11.3.min.css", null, $version );
-		wp_register_style( 'acf-niche-markdown', "{$url}assets/css/input.css", [ 'acf-input' ], $version );
-		wp_enqueue_style( 'acf-niche-markdown-inscrybmde' );
-		wp_enqueue_style( 'acf-niche-markdown' );
+		wp_enqueue_style( 'acf-niche-markdown-inscrybmde', "{$url}assets/css/inscrybmde-1.11.3.min.css", null, $version );
+		//wp_enqueue_style( 'acf-niche-markdown', "{$url}assets/css/input.css", [ 'acf-input' ], $version );
 
 	}
 
