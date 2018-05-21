@@ -1,0 +1,11 @@
+{
+    "name": "nichestudio/ACF-Markdown",
+    "description": "Markdown-enhanced ACF textarea",
+    "homepage": "https://github.com/nichestudio/ACF-Markdown",
+    "license": "MIT",
+    "type": "wordpress-plugin",
+    "require": {
+        "cebe/markdown": "^1.2",
+        "php": ">=5.4"
+    }
+}
