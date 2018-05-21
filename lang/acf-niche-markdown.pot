@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Advanced Custom Fields: Markdown\n"
-"POT-Creation-Date: 2018-05-21 11:17+1000\n"
-"PO-Revision-Date: 2018-05-21 11:15+1000\n"
+"POT-Creation-Date: 2018-05-21 17:16+1000\n"
+"PO-Revision-Date: 2018-05-21 17:16+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -25,20 +25,28 @@ msgstr ""
 msgid "Markdown"
 msgstr ""
 
-#: fields/class-markdown.php:29
+#: fields/class-markdown.php:30
 msgid "Show toolbar"
 msgstr ""
 
-#: fields/class-markdown.php:38
+#: fields/class-markdown.php:39
 msgid "Spellchecker"
 msgstr ""
 
-#: fields/class-markdown.php:39
+#: fields/class-markdown.php:40
 msgid "Note: Only highlights errors, does not provide suggestions."
+msgstr ""
+
+#: fields/class-markdown.php:49
+msgid "Allow HTML"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "Advanced Custom Fields: Markdown"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/nichestudio/ACF-Markdown"
 msgstr ""
 
 #. Description of the plugin/theme
