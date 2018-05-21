@@ -19,6 +19,7 @@ class Markdown_Field extends \acf_field {
 		$this->defaults = [
 			'toolbar' => 1,
 			'spellcheck' => 1,
+			'allow_html' => 0,
 		];
 
 	}
@@ -44,13 +45,22 @@ class Markdown_Field extends \acf_field {
 			'ui_off_text'  => 'No',
 		] );
 
+		acf_render_field_setting( $field, [
+			'label'        => __( 'Allow HTML', 'acf-niche-markdown' ),
+			'type'         => 'true_false',
+			'name'         => 'allow_html',
+			'ui'           => 1,
+			'ui_on_text'   => 'Yes',
+			'ui_off_text'  => 'No',
+		] );
+
 	}
 
 	function render_field( $field ) {
 
 		$atts = [];
 		$string_atts = [ 'id', 'class', 'name', 'value', 'placeholder', 'rows', 'maxlength' ];
-		$data_atts = [ 'toolbar', 'spellcheck' ];
+		$data_atts = [ 'toolbar', 'spellcheck', 'allow_html' ];
 		$boolean_atts = [ 'readonly', 'disabled', 'required' ];
 
 		foreach ( $string_atts as $k ) {
@@ -87,6 +97,10 @@ class Markdown_Field extends \acf_field {
 
 		if ( empty( $value ) ) {
 			return $value;
+		}
+
+		if ( empty( $field[ 'allow_html' ] ) ) {
+			$value = esc_html( $value );
 		}
 
 		$parser = new \cebe\markdown\GithubMarkdown();

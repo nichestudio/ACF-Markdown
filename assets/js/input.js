@@ -54,6 +54,7 @@
 					enabled: false,
 				},
 				parsingConfig: {
+					xml: this.o.allow_html === 1,
 					allowAtxHeaderWithoutSpace: true,
 				},
 			};
