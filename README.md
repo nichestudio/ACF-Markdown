@@ -15,7 +15,7 @@ Works with repeaters and even frontend forms using [Advanced Forms](https://gith
 
 ## Installation
 
-	composer require nichestudio/ACF-Markdown
+	composer require nichestudio/acf-markdown
 
 ## Customise Editor
 
